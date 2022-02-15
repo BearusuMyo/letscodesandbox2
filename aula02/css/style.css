@@ -2,3 +2,45 @@
 html{
     font-family: "Google Sans";
 }
+
+
+button{
+    background-color: #4285f4;
+    border: 3px #4285fa solid;
+    border: none;
+    border-radius: 1rem;
+    color: white;
+    padding: 16px 32px;
+    font-size: large;
+    text-align: center;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+input{
+    font-family: "Google Sans";
+}
+input#comp{
+    background-color: #7e7e7e;
+    border: 3px #7e7e7e solid;
+    border: none;
+    border-radius: 1rem;
+    text-align: center;
+    color: white;
+    padding: 16px 32px;
+    font-size: large;
+    width: 1rem;
+}
+
+input[type=number], input#result{
+    background-color: #fff;
+    border: 3px #DB4437 solid;
+    border-radius: 1rem;
+    text-align: center;
+    color: black;
+    padding: 16px 32px;
+    font-size: large;
+}
+
+input[type=number]:hover {
+    border: 3px #4285f4 solid;
+}

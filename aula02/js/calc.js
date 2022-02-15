@@ -1,7 +1,12 @@
 function calcular(){
-    var nuwum1 = document.getElementById("nom1").value;
-    var nuwum2 = document.getElementById("nom2").value;
-    console.log(nuwum1+nuwum2);
+    const nuwum1 = parseFloat(document.getElementById("nom1").value);
+    const nuwum2 = parseFloat(document.getElementById("nom2").value);
+    console.log("Seus nuwumeros: ",nuwum1, nuwum2);
 
-    console.log("Calculado!")
+    const towotal = nuwum1 + nuwum2;
+    document.getElementById("result").value = towotal;
+
+
+    console.log(towotal);
+    console.log("Calculado!");
 }
