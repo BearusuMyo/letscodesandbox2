@@ -4,15 +4,10 @@ function comparar(){
     console.log("Seus nuwumeros: ",nuwum1, nuwum2);
 
     const cowomp = nuwum1 > nuwum2;
-    if (cowomp === true){
+    if (cowomp == true){
         document.getElementById("result").value = "Verdadeiro";
 
     }else{
         document.getElementById("result").value = "Falso"
     }
-    
-
-
-    console.log(towotal);
-    console.log("Calculado!");
 }
