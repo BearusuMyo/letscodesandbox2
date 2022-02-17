@@ -7,8 +7,10 @@ function analisar(){
         resulta = "Adulto(a)";
     } else if (idade >=60 && idade < 120){
         resulta = "E-doso(a)";
-    } else {
+    } else if (idade != NaN){
         resulta = "Defunto(a) e esqueçeram de enterrar!";
+    } else {
+        resulta = "Informe um número, bobão! >:O";
     }
     document.getElementById("result2").value = resulta;
 }
