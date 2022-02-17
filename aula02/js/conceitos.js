@@ -5,12 +5,19 @@ var nowota = (nuwuber1 + nuwuber2) / 2;
 var resp = "";
 var recup = "-";
 
+
+do {
+    namaewa = prompt("Alguma informação repassada está incorreta, tente de novo\nPor favor, informe o seu nome:");
+    nuwuber1 = parseFloat(prompt("Informe a sua nota:"));
+    nuwuber2 = parseFloat(prompt("Informe agora a sua segunda nota:"));
+    nowota = (nuwuber1 + nuwuber2) / 2;
+}while ( nowota === NaN || nuwuber1 === NaN || nuwuber2 === NaN )
 if (nowota >= 6){
     resp = "Aprovado!";
 } else if (nowota < 6 && nowota >= 4) {
     resp = "Recuperação!";
     recup = parseFloat(prompt("Que pena, você ficou de Recuperação\nInforme sua nota para calcularmos sua nota final: "));
-    nowota = (nowota + recup);
+    nowota = (nowota + recup) / 2;
     if (nowota > 5){
         resp = "Aprovado com recuperação!";
     } else{
