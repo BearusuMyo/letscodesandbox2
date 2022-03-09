@@ -43,7 +43,7 @@ input[type=number], input#result{
     padding: 16px 32px;
     font-size: large;
 }
-input#result2{
+input#result2, input#quant, input#model {
     background-color: #fff;
     border: 3px #0F9D58 solid;
     text-align: center;
@@ -54,6 +54,6 @@ input#result2{
     font-size: large;
 }
 
-input[type=number]:hover {
+input[type=number]:hover, input#model:hover {
     border: 3px #4285f4 solid;
 }
